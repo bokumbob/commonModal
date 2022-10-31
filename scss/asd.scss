@@ -1,0 +1,108 @@
+p {
+    font-size: 5vw!important;
+    color:red;
+    // background-color: black;
+}
+
+.test-modal {
+    width: 334px;
+    height: 373px;
+    position: absolute;
+    z-index: 1;
+    // left: 50%;
+    // top: 50%;
+    // transform: translate(-50%, -50%);
+    -ms-user-select: none; 
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    border: 1px black solid;
+    display: none;
+    .test-modal-header {
+        width: 100%;
+        height: 24px;
+        background-color: #693;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 0.3rem;
+        color: #f1f1f1;
+        .test-modal-header-title {
+            flex: 1;
+        }
+        :hover{
+            cursor: pointer;
+        }
+    }
+    .test-modal-body {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        padding: 0 0.5rem;
+        textarea {
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            resize: none;
+        }
+        .test-modal-body-title {
+            min-width: 300px;
+            textarea {
+                height: 30px;
+            }
+        }
+        .test-modal-body-des {
+            margin-top: 0.6rem;
+            textarea{
+                min-width: 300px;
+                min-height: 200px;
+                padding: 0.35rem;
+                box-sizing: border-box;
+            }
+        }
+    }
+    .test-modal-footer {
+        width: 100%;
+        padding: 0.6rem;
+        background-color: #f1f1f1;
+        text-align: right;
+    }
+    .modal-resize-top, .modal-resize-bottom{
+        width: 100%;
+        height: 5px;
+        position: absolute;
+        left: 0;
+        cursor: row-resize;
+    }
+    .modal-resize-left, .modal-resize-right{
+        width: 5px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        cursor: col-resize;
+    }
+    .modal-resize-bottom {
+        bottom: 0;
+    }
+    .modal-resize-right {
+        right: 0;
+    }
+    .modal-resize-right-bottom{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 5px;
+        height: 5px;
+        cursor:nwse-resize;
+        z-index: 2;
+    }
+}
+
+.test-modal.active {
+    display: block;
+}
+
+// dsadsad
+//asd
